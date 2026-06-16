@@ -102,7 +102,7 @@ h3 {
 }
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1.05fr;
+  grid-template-columns: 1fr;
   min-height: 720px;
   background:
     linear-gradient(
@@ -149,14 +149,7 @@ h3 {
 .button.outline {
   background: transparent;
   color: var(--gold-dark);
-}
-.hero-image {
-  background: url("assets/lobby.png") center center / cover no-repeat;
-  min-height: 520px;
-  align-self: end;
-  margin: 95px 7vw 0 0;
-  border-radius: 260px 260px 0 0;
-  box-shadow: 0 30px 80px rgba(62, 45, 22, 0.18);
+
 }
 .trust-strip {
   display: grid;
@@ -373,9 +366,8 @@ footer a {
   .hero-copy {
     padding: 70px 6vw 25px;
   }
-  .hero-image {
-    margin: 0 6vw 40px;
-    min-height: 440px;
+.hero-image {
+  display: none;
   }
   .trust-strip {
     grid-template-columns: 1fr;
