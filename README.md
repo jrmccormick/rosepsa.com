@@ -1,2 +1,0 @@
-# rosepsa.com
-Rose PSA
