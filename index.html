@@ -8,56 +8,95 @@
 
   <meta
     name="description"
-    content="Rose Plastic Surgery & Aesthetics, a boutique plastic surgery practice in Hickory, NC, is coming soon."
+    content="Rose Plastic Surgery & Aesthetics is preparing a private, patient-centered experience."
   />
 
-  <link rel="stylesheet" href="styles.css" />
-
   <style>
+    :root {
+      --cream: #fbf7f1;
+      --gold: #b98933;
+      --gold-dark: #8f661f;
+      --charcoal: #25211d;
+      --muted: #6f665e;
+      --line: #e7ded2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: Arial, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fbf7f1;
-      color: #25211d;
-      font-family: Arial, sans-serif;
+      padding: 32px;
       text-align: center;
-      padding: 30px;
     }
 
     .coming-soon {
-      max-width: 720px;
+      max-width: 760px;
+      width: 100%;
+      padding: 70px 40px;
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.72);
     }
 
-    .coming-soon img {
+    img {
       width: 220px;
-      margin-bottom: 40px;
+      max-width: 80%;
+      margin-bottom: 42px;
     }
 
-    .coming-soon h1 {
-      font-family: Georgia, serif;
-      font-size: 52px;
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--gold-dark);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 68px);
       font-weight: 400;
-      margin: 0 0 20px;
+      line-height: 1.02;
     }
 
-    .coming-soon p {
+    p {
+      margin: 0 auto 12px;
+      max-width: 560px;
+      color: var(--muted);
       font-size: 18px;
-      color: #6f665e;
-      margin: 0 0 12px;
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 70px;
+      height: 1px;
+      margin: 34px auto;
+      background: var(--gold);
     }
 
     .contact {
-      margin-top: 36px;
+      margin-top: 8px;
       font-size: 16px;
     }
 
     .contact a {
-      color: #8f661f;
+      color: var(--gold-dark);
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -66,17 +105,15 @@
   <main class="coming-soon">
     <img src="assets/logo.png" alt="Rose Plastic Surgery & Aesthetics logo" />
 
-    <h1>Something Beautiful is Taking Shape.</h1>
+    <p class="eyebrow">Rose Plastic Surgery & Aesthetics</p>
 
-    <p>
-    </p>
+    <h1>Something Beautiful Is Taking Shape</h1>
 
-    <p>
-Rose Plastic Surgery & Aesthetics is preparing to welcome patients soon.
-    </p>
+    <p>A private, patient-centered experience is coming soon.</p>
+
+    <div class="divider"></div>
 
     <div class="contact">
-      <p></p>
       <p>
         <a href="tel:8283070797">828-307-0797</a><br />
         <a href="mailto:scheduling@rosepsa.com">scheduling@rosepsa.com</a>
